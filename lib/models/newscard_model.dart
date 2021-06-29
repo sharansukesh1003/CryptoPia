@@ -3,5 +3,7 @@ class NewsModel {
   String name;
   String urlToImage;
   String description;
-  NewsModel({this.title, this.name, this.urlToImage, this.description});
+  String url;
+  NewsModel(
+      {this.title, this.name, this.urlToImage, this.description, this.url});
 }

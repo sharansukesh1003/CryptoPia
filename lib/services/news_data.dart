@@ -21,7 +21,8 @@ class NewsApi {
               name: i['source']['name'],
               urlToImage: i['urlToImage'],
               title: i['title'],
-              description: i['description']);
+              description: i['description'],
+              url: i['url']);
           newsDataList.add(newsData);
         }
       });

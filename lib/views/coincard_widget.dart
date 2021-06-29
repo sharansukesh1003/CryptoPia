@@ -1,4 +1,3 @@
-import 'package:btc_tracker/views/news_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:btc_tracker/constants/constant_colors.dart';
