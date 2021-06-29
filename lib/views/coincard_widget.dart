@@ -1,3 +1,5 @@
+import 'package:btc_tracker/views/news_screen.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:btc_tracker/constants/constant_colors.dart';
 
@@ -23,7 +25,7 @@ class CoinCardView extends StatelessWidget {
           width: double.infinity,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
-            color: Colors.white,
+            color: constantColors.secondaryColor,
           ),
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
@@ -36,15 +38,18 @@ class CoinCardView extends StatelessWidget {
                       CircleAvatar(
                         child: Image.network(logoUrl),
                         radius: 40,
-                        backgroundColor: Colors.white,
+                        backgroundColor: constantColors.secondaryColor,
                       ),
                       SizedBox(
                         width: 10,
                       ),
                       Container(
-                        color: constantColors.sepratorColor,
                         height: 70,
                         width: 3,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(15),
+                        ),
                       ),
                       SizedBox(
                         width: 10,
@@ -59,23 +64,26 @@ class CoinCardView extends StatelessWidget {
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 15,
-                                color: constantColors.currencyColor),
+                                color: Colors.white),
                           ),
                           Text(
-                            symbol,
+                            symbol.toUpperCase(),
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 14,
-                                color: constantColors.secondaryColor),
+                                fontSize: 12,
+                                color: constantColors.smallTextColor),
+                          ),
+                          SizedBox(
+                            height: 10,
                           ),
                           Row(
                             children: <Widget>[
                               Text(
-                                "High",
+                                "High :",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 10,
-                                    color: constantColors.secondaryColor),
+                                    color: constantColors.smallTextColor),
                               ),
                               SizedBox(width: 3),
                               Text(
@@ -85,23 +93,16 @@ class CoinCardView extends StatelessWidget {
                                     fontSize: 12,
                                     color: Colors.green),
                               ),
-                              Text(
-                                "\$",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12,
-                                    color: Colors.black),
-                              ),
                             ],
                           ),
                           Row(
                             children: <Widget>[
                               Text(
-                                "Low",
+                                "Low :",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 10,
-                                    color: constantColors.secondaryColor),
+                                    color: constantColors.smallTextColor),
                               ),
                               SizedBox(width: 3),
                               Text(
@@ -111,13 +112,6 @@ class CoinCardView extends StatelessWidget {
                                     fontSize: 12,
                                     color: Colors.red),
                               ),
-                              Text(
-                                "\$",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12,
-                                    color: Colors.black),
-                              )
                             ],
                           )
                         ],
@@ -132,7 +126,7 @@ class CoinCardView extends StatelessWidget {
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 16,
-                          color: constantColors.currencyColor),
+                          color: Colors.white),
                     ),
                     Text(
                       "\$",

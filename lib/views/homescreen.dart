@@ -1,6 +1,5 @@
 import 'package:btc_tracker/services/crypto_data.dart';
 import 'package:flutter/material.dart';
-import 'dart:async';
 import 'package:btc_tracker/constants/constant_colors.dart';
 import 'package:btc_tracker/models/coincard_model.dart';
 import 'package:btc_tracker/views/coincard_widget.dart';
@@ -20,7 +19,6 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
     super.initState();
     getCryptoData();
-    print('Called');
   }
 
   getCryptoData() async {
@@ -35,22 +33,12 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: constantColors.primaryColor,
-      appBar: AppBar(
-        centerTitle: true,
-        backgroundColor: constantColors.primaryColor,
-        elevation: 3,
-        title: Text(
-          "Cryptopia",
-          style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 24,
-              color: constantColors.titleColor),
-        ),
-      ),
       body: _loading
           ? Center(
               child: Container(
-                child: CircularProgressIndicator(),
+                child: CircularProgressIndicator(
+                  color: Colors.white,
+                ),
               ),
             )
           : SingleChildScrollView(
