@@ -6,6 +6,7 @@ void main() {
   runApp(CryptoTrackerApp());
 }
 
+//TODO : Fix TextOverFlow CoinCardWidget
 class CryptoTrackerApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

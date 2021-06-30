@@ -9,8 +9,8 @@ class NewsApi {
   final String _key = "83f93ca6d36a479a84c019e4488ebfe0";
 
   Future<void> getNewsData() async {
-    var now = new DateTime.now();
-    var formatter = new DateFormat('yyyy-MM-dd');
+    var now = DateTime.now();
+    var formatter = DateFormat('yyyy-MM-dd');
     final String date = formatter.format(now);
     print(date);
 

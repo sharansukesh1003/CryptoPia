@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:btc_tracker/constants/constant_colors.dart';
 import 'package:btc_tracker/views/main_screen.dart';
-import 'package:btc_tracker/views/webview_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
