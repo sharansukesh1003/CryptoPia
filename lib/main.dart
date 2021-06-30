@@ -1,6 +1,6 @@
+import 'package:btc_tracker/views/splash_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'views/main_screen.dart';
 
 void main() {
   runApp(CryptoTrackerApp());
@@ -12,7 +12,7 @@ class CryptoTrackerApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Crypto Tracker',
-      home: MainScreen(),
+      home: SplashScreen(),
     );
   }
 }
