@@ -44,6 +44,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   'Cryptopia.',
                   textStyle: TextStyle(
                       fontSize: 36.0,
+                      fontFamily: 'Poppins',
                       fontWeight: FontWeight.bold,
                       color: Colors.white),
                   speed: Duration(milliseconds: 200),

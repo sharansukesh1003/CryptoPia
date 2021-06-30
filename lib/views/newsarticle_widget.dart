@@ -50,6 +50,7 @@ class NewsArticleWidget extends StatelessWidget {
                   Text(
                     name,
                     style: TextStyle(
+                        fontFamily: 'Poppins',
                         fontWeight: FontWeight.bold,
                         fontSize: 18,
                         color: Colors.white),
@@ -67,7 +68,8 @@ class NewsArticleWidget extends StatelessWidget {
                   Text(
                     title,
                     style: TextStyle(
-                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.w600,
                         fontSize: 14,
                         color: Colors.white),
                   )
@@ -89,7 +91,11 @@ class NewsArticleWidget extends StatelessWidget {
             padding: const EdgeInsets.all(10.0),
             child: Text(
               description,
-              style: TextStyle(color: constantColors.smallTextColor),
+              style: TextStyle(
+                  color: constantColors.smallTextColor,
+                  fontFamily: 'Poppins',
+                  fontWeight: FontWeight.w500,
+                  fontSize: 12),
             ),
           ),
         ),

@@ -20,7 +20,7 @@ class CoinCardView extends StatelessWidget {
     return Column(
       children: [
         Container(
-          height: 100,
+          height: 120,
           width: double.infinity,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
@@ -43,7 +43,7 @@ class CoinCardView extends StatelessWidget {
                         width: 10,
                       ),
                       Container(
-                        height: 70,
+                        height: 90,
                         width: 3,
                         decoration: BoxDecoration(
                           color: Colors.white,
@@ -61,14 +61,16 @@ class CoinCardView extends StatelessWidget {
                             name,
                             overflow: TextOverflow.ellipsis,
                             style: TextStyle(
+                                fontFamily: 'Poppins',
                                 fontWeight: FontWeight.bold,
-                                fontSize: 15,
+                                fontSize: 14,
                                 color: Colors.white),
                           ),
                           Text(
                             symbol.toUpperCase(),
                             style: TextStyle(
-                                fontWeight: FontWeight.bold,
+                                fontFamily: 'Poppins',
+                                fontWeight: FontWeight.w600,
                                 fontSize: 12,
                                 color: constantColors.smallTextColor),
                           ),
@@ -80,7 +82,8 @@ class CoinCardView extends StatelessWidget {
                               Text(
                                 "High :",
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'Poppins',
+                                    fontWeight: FontWeight.w500,
                                     fontSize: 10,
                                     color: constantColors.smallTextColor),
                               ),
@@ -88,6 +91,7 @@ class CoinCardView extends StatelessWidget {
                               Text(
                                 highPrice.toString(),
                                 style: TextStyle(
+                                    fontFamily: 'Poppins',
                                     fontWeight: FontWeight.bold,
                                     fontSize: 12,
                                     color: Colors.green),
@@ -99,7 +103,8 @@ class CoinCardView extends StatelessWidget {
                               Text(
                                 "Low :",
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'Poppins',
+                                    fontWeight: FontWeight.w500,
                                     fontSize: 10,
                                     color: constantColors.smallTextColor),
                               ),
@@ -107,6 +112,7 @@ class CoinCardView extends StatelessWidget {
                               Text(
                                 lowPrice.toString(),
                                 style: TextStyle(
+                                    fontFamily: 'Poppins',
                                     fontWeight: FontWeight.bold,
                                     fontSize: 12,
                                     color: Colors.red),
@@ -123,15 +129,17 @@ class CoinCardView extends StatelessWidget {
                     Text(
                       price.toString(),
                       style: TextStyle(
+                          fontFamily: 'Poppins',
                           fontWeight: FontWeight.bold,
-                          fontSize: 16,
+                          fontSize: 14,
                           color: Colors.white),
                     ),
                     Text(
                       "\$",
                       style: TextStyle(
+                          fontFamily: 'Poppins',
                           fontWeight: FontWeight.bold,
-                          fontSize: 18,
+                          fontSize: 14,
                           color: Colors.green),
                     ),
                   ],

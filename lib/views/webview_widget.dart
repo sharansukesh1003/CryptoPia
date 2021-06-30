@@ -25,9 +25,12 @@ class _WebViewerState extends State<WebViewer> {
         backgroundColor: constantColors.secondaryColor,
         elevation: 3,
         title: Text(
-          "Cryptopia",
+          "Cryptopia.",
           style: TextStyle(
-              fontWeight: FontWeight.bold, fontSize: 24, color: Colors.white),
+              fontWeight: FontWeight.bold,
+              fontSize: 24,
+              color: Colors.white,
+              fontFamily: 'Poppins'),
         ),
       ),
       body: WebView(
