@@ -6,7 +6,7 @@ import 'package:intl/intl.dart';
 class NewsApi {
   List<NewsModel> newsDataList = [];
 
-  final String _key = "83f93ca6d36a479a84c019e4488ebfe0";
+  final String _key = "ur key here";
 
   Future<void> getNewsData() async {
     var now = DateTime.now();
